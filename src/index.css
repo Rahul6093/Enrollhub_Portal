@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@source "preline/dist/*.js";
+@import "preline/variants.css";
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* somewhere in your global CSS or Tailwind config if using arbitrary values */
+.scrollbar-always-visible::-webkit-scrollbar {
+  height: 8px;
+}
+.scrollbar-always-visible::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.scrollbar-always-visible {
+  scrollbar-width: auto;
+  scrollbar-color: #888 transparent;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+header {
+  position: sticky !important;
+  top: 0;
+  z-index: 9999;
+}
