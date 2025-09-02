@@ -4,9 +4,10 @@ import { serviceList, getServiceList } from "./serviceList";
 import { AddTeacherModal } from "./modals/AddTeacherModal";
 import { EditTeacherModal } from "./modals/EditTeacherModal";
 import { AddCourseModal } from "./modals/AddCourseModal";
-import { EditCourseModal } from "./modals/EditCourseModal";
-import { EditServiceModal } from "./modals/editServiceModal.jsx";
+import { EditServiceModal } from "./modals/EditServiceModal.jsx";
 import { CourseCard } from "./CourseCard";
+import { EditCourseModal } from "./modals/editCourseModal.jsx";
+
 
 const navItems = [
   { id: "teachers", label: "👩‍🏫 Teachers" },
